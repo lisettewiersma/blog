@@ -15,12 +15,14 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 
 a {
     text-decoration: none;
-    color: #191919;
+    color: #333232;
 }
 
 .titel {
@@ -32,47 +34,92 @@ a {
     position: relative;
     width: 100%;
     text-decoration: none;
-    color: #191919;
+    color: #333232;
 }
 
 .knoppen {
     position: relative;
     text-decoration: none;
-    color: #191919;
+    color: #333232;
     margin: auto;
     float: center;
     position: relative;
 }
 
+.headerblog {
+    width: 80%;
+    height: 60vh;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: end;
+    margin-bottom: 1.2em;
+}
+
+.headertitle{
+    font-size: 6em;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    color: #5C7457;
+}
+
+.headerimg {
+    position: relative;
+    max-height: 60vh;
+    padding: 0.5em 5em 0.5em 0.5em;
+    margin-right: 1em;
+    background-color: #979B8D;
+}
+
 h1 {
-    color: #CED0CE;
+    color: #EECBCA;
     font-family: 'Playfair Display', serif;
     font-size: 3em;
     font-weight: 900;
+    line-height: 0;
+    margin-top: 3em;
 }
 
 p {
-    color: #191919;
+    color: #333232;
     font-family: 'Playfair Display', serif;
     font-size: 0.9em;
     font-weight: 400;
 }
 
-img {
+.info {
+    text-align: center;
+}
+
+.blogimg {
     max-width: 400px;
+    max-height: 60%;
     position: relative;
     float: left;
     padding: 2%;
     border: #e6e8e6;
+    z-index: 400;
 }
 
 .content {
     position: relative;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
 .blog {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #333232;
     width: 60%;
     position: relative;
     margin: auto;
+}
+
+.title{
+    text-align: center;
 }
