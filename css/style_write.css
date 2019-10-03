@@ -1,0 +1,31 @@
+body {
+    margin: auto;
+    background-color: #EECBCA;
+    height: 100vh;
+    width: 100vw;
+
+    color: #333232;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.header {
+    background-color: #FFFFFF;
+}
+
+#title, #content{
+    margin: auto;
+    border: none;
+    background-color: #FFFFFF;
+    width: 60vw;
+    margin-bottom: 1em;
+}
+
+#title {
+    height: 2em;
+}
+
+#content {
+    height: 40em;
+}

@@ -11,14 +11,16 @@
 <body>
     <div class="header">
         <a href="#"><p class="knop">Log in</p></a>
-        <a href="#"><h2 class="titel">Blog</h2></a>
-        <a href="#"><p class="knop">Register</p></a>
+        <a href="#"><h3 class="titel">Blog</h3></a>
+        <a href="../write.html"><p class="knop"> Schrijf blog</p></a>
     </div>
     <?php 
     include 'blogs.php';
     include 'headerblogs.php';
     headerblogs();
+    echo "<div class='blogcontainer'>";
     blogs();
+    echo "</div>";
     ?>
 </body>
 </html>
