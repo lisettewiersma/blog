@@ -31,7 +31,7 @@ function blogs(){
 
                 echo "<div class='blog'>" . "<div class='wrapper'>" . 
                 "<div class='$wrapperclass'><h1 class='title'>" . $row['title'] . "</h1> 
-                <p>". "Geschreven door " . $row['author'] . " op " . $row['date'] ."</p></div>" .
+                <p class='info'>". "Geschreven door " . $row['author'] . " op " . $row['date'] ."</p></div>" .
                 "<img class='blogimg $class'  src='$row[image]'>" . "</div>" . 
                 "<p class='content'>" . $row['content'] . "</p>" . "</div>";
             }
