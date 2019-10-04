@@ -12,7 +12,7 @@
     <div class="header">
         <a href="#"><p class="knop" id="inlogbttn">Log in</p> 
         <a href="#"><h3 class="titel">Blog</h3></a>
-        <a href="writeform.php"><p class="knop"> Schrijf blog</p></a>
+        <a href="userside/writeform.php"><p class="knop"> Schrijf blog</p></a>
     </div>
 
     <div id="inlogModal" class="modal">
@@ -24,7 +24,7 @@
                 <input type="text" name="username" id="username"> <br> <br>
                 <label for="password"> Wachtwoord: </label>
                 <input type="password" name="password" id="password"> <br><br>
-                <input type="submit" value="Login">
+                <input type="submit" name="submit" value="Login">
                 <a href="#"><p class="register" id="registerbttn"> Geen account? </p></a>
             </form>
         </div>
@@ -50,12 +50,13 @@
     include 'login.php';
     include 'blogs.php';
     include 'headerblogs.php';
-
-    login();
+ 
+    
     headerblogs();
     echo "<div class='blogcontainer'>";
     blogs();
     echo "</div>";
+    login();
     ?>
 
     <script src="../js/inlogmodal.js"></script>

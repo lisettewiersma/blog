@@ -7,10 +7,14 @@ function register() {
     }
 
 }
+echo "<script>console.log('sdifnsogn');</script>";
+
 function login() {
     include 'connect.php';
-
+   
     if (isset ($_POST['submit'])){
+
+        echo "<script>console.log('iafpiadfpiajdipfjapidjf')</script>";
         
         if ( !isset($_POST['username'], $_POST['password']) ) {
             die ('Vul je gebruikersnaam en wachtwoord in');
@@ -24,8 +28,8 @@ function login() {
 
         if($row = $result->fetch_assoc()) {
             echo "<script> 
-            alert(' $user is ingelogd');
-            location.href='showblogs.php';
+            alert(' ".$user." is ingelogd');
+            location.href='userside/writeform.php';
             </script>";
         }
     }

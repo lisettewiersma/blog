@@ -10,6 +10,15 @@ body {
     font-weight: 400;
 }
 
+form {
+    width: 60vw;
+    margin: auto;
+}
+
+input[type="submit"] {
+    background-color: #FFFFFF;
+}
+
 .header {
     background-color: #FFFFFF;
 }

@@ -29,11 +29,35 @@ function blogs(){
                     $class = 'imgright';
                 }
 
-                echo "<div class='blog'>" . "<div class='wrapper'>" . 
-                "<div class='$wrapperclass'><h1 class='title'>" . $row['title'] . "</h1> 
-                <p class='info'>". "Geschreven door " . $row['author'] . " op " . $row['date'] ."</p></div>" .
-                "<img class='blogimg $class'  src='$row[image]'>" . "</div>" . 
-                "<p class='content'>" . $row['content'] . "</p>" . "</div>";
+                echo "<div class='blog'><div class='wrapper'><div class='$wrapperclass'><h1 class='title'>" . $row['title'] . "</h1> 
+                <p class='info'> Geschreven door " . $row['author'] . " op " . $row['date'] ."</p></div> 
+                <img class='blogimg $class'  src='$row[image]'></div> 
+                <button id='readmorebttn".$row['id']."'> Lees meer </button> </div></div> </div>
+    <div id='blogModal' class='blogModal'>
+    <div class='modal-content-blog'>
+    <span class='blogclose'>&times;</span>
+    <image class='popupimg' scr=" . $row['image'] . "> <h1 class='popuptitle'>" . $row['title'] . " </h1>
+    <p> Gechreven door: " . $row['author'] . " op " . $row['date'] . "<p class='popupblog'>" . $row['content'] . "
+</div>
+</div>
+<script> 
+var blogmodal = document.getElementById('blogModal');
+var blogbtn = document.getElementById('readmorebttn" . $row['id'] . "');
+var blogspan = document.getElementsByClassName('blogclose')[0];
+
+blogbtn.onclick = function() {
+  blogmodal.style.display = 'block';
+}
+
+blogspan.onclick = function() {
+  blogmodal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+  if (event.target == blogmodal) {
+    blogmodal.style.display = 'none';
+  }
+}</script>";
             }
     } else {
         echo "Geen blogs";

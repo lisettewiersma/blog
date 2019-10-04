@@ -77,7 +77,7 @@ label {
 }
 
 /* The Modal (background) */
-.modal, .registerModal {
+.modal, .registerModal, .blogModal, .headerModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -91,7 +91,7 @@ label {
   }
 
   /* Modal Content/Box */
-  .modal-content, .modal-content-register {
+  .modal-content, .modal-content-register, .modal-content-blog, .modal-content-header {
     background-color: #F8ECEB;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -100,14 +100,15 @@ label {
   }
   
   /* The Close Button */
-  .inlogclose, .registerclose {
+  .inlogclose, .registerclose, .blogclose, .headerclose{
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .inlogclose:hover, .registerclose:hover, .inlogclose:focus, .registerclose:focus{
+  .inlogclose:hover, .registerclose:hover, .inlogclose:focus, .registerclose:focus
+  .blogclose:hover, .blogclose:focus, .headerclose:hover, .headerclose:focus {
     color: #333232;
     text-decoration: none;
     cursor: pointer;
